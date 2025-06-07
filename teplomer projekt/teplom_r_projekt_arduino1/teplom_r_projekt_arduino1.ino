@@ -10,8 +10,8 @@
 #include "DHT.h"
 
 //Nastaveni
-const int Tlacitko1 = 8; // pin praveho tlacitka
-const int Tlacitko2 = 7; //pin leveho tlacitka
+const int TLACITKO1 = 8; // pin praveho tlacitka
+const int TLACITKO2 = 7; //pin leveho tlacitka
 #define DHTPIN 4 // pin senzoru
 #define DHTTYPE DHT11 // typ senzoru
 
@@ -90,8 +90,8 @@ void prepsaniTeploty(float teplota ,int y){
 }
 
 void setup() {
-  pinMode(Tlacitko1, INPUT_PULLUP); // nastaveni tlacitek, tlacitka jsou zapojena v pull-upu aby se nemusely zbytečně používat rezistory a vše šlo pekně přes 5V a GND
-  pinMode(Tlacitko2, INPUT_PULLUP); // nastaveni tlacitek, tlacitka jsou zapojena v pull-upu aby se nemusely zbytečně používat rezistory a vše šlo pekně přes 5V a GND
+  pinMode(TLACITKO1, INPUT_PULLUP); // nastaveni tlacitek, tlacitka jsou zapojena v pull-upu aby se nemusely zbytečně používat rezistory a vše šlo pekně přes 5V a GND
+  pinMode(TLACITKO2, INPUT_PULLUP); // nastaveni tlacitek, tlacitka jsou zapojena v pull-upu aby se nemusely zbytečně používat rezistory a vše šlo pekně přes 5V a GND
   lcd.init(); //nastaveni displeje
   lcd.backlight();
   lcd.setCursor(0, 0); // nastavi aby se text/symboly/proste cokoliv zaclo psat na souradnici 0x0
@@ -126,16 +126,16 @@ void loop() {
     return;
   }
   else{
-    // Pokud se stikne Tlacitko2, ulozi se nova teplota
-  if (digitalRead(Tlacitko2) == LOW) { // tlacitka jsou zapojena jako pull-up, takze LOW znamena stisknuti
+    // Pokud se stikne TLACITKO2, ulozi se nova teplota
+  if (digitalRead(TLACITKO2) == LOW) { // tlacitka jsou zapojena jako pull-up, takze LOW znamena stisknuti
     posledniTeplota = teplota; // do proměnné posledniTeplota se načte teplota která se pošle ze senzoru
     teplotaNactena = true; // začne se načítat teplota
     potrebaPrekreslit = true;
     delay(500); // Debounce tlačítka
   }
 
-  // Přepínání jednotek zůstává na Tlacitko1
-  if (digitalRead(Tlacitko1) == LOW) { // tlacitka jsou zapojena jako pull-up, takze LOW znamena stisknuti
+  // Přepínání jednotek zůstává na TLACITKO1
+  if (digitalRead(TLACITKO1) == LOW) { // tlacitka jsou zapojena jako pull-up, takze LOW znamena stisknuti
     Normalnijednotky = !Normalnijednotky; //negace hodnoty normalni jednotky - prepne mezi mezi C a F
     potrebaPrekreslit = true; // Prekresli se UI
     delay(500);

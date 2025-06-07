@@ -5,11 +5,13 @@
 //
 // ===================================
 
+// Připojení knihoven, které jsou již zahrnuté ve složce projektu
 #include <Wire.h>
 #include "LiquidCrystal_I2C.h"
 #include "DHT.h"
 
-//Nastaveni
+
+//Nastaveni, pouze přepisujte toto---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 const int TLACITKO1 = 8; // pin praveho tlacitka
 const int TLACITKO2 = 7; //pin leveho tlacitka
 #define DHTPIN 4 // pin senzoru
@@ -23,12 +25,14 @@ LiquidCrystal_I2C lcd(0x27, 16, 2); // pro 16x2 displej, pokud displej nefunguje
 // Tohle je zde jenom aby IDE nevyhazovalo chyby
 int buttonState = HIGH;
 bool Normalnijednotky = true;
+//Konec nastaveni, dál se nehrabat---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 // ZACATEK KODU, NEHRABAT SE TU!
 // init senzoru
 DHT dht(DHTPIN, DHTTYPE);
 
-// vlastní symbol pro znak stupně (ano, taky se divim že tam není xd)
+// vlastní symbol pro znak stupně
 byte stupenChar[8] = {
   0b00100,
   0b01010,
@@ -146,7 +150,7 @@ void loop() {
       defaultUI(); 
 
     if (teplotaNactena) { 
-      if (Normalnijednotky) { // normalni jednotky - stupne Celsia, nenormalni jednotky pro ameicany - frenheit
+      if (Normalnijednotky) { // normalni jednotky - stupne Celsia, nenormalni jednotky pro američany - fahrenheit
         prepsaniTeploty(posledniTeplota, 0);
       } else {
         prepsaniTeploty(posledniTeplota * 9 / 5 + 32, 1);

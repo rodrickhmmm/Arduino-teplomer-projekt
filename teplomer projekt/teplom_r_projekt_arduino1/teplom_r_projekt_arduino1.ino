@@ -119,12 +119,11 @@ bool potrebaPrekreslit = true; // Proměnná na to jestli se má překreslit dis
 void loop() {
   float teplota = dht.readTemperature(); // inicializuje promennou na cteni teploty ze senzoru
 
-  if (isnan(teplota)) { // pokud teplota není žádné číslo, zobrazí se další error. The isnan() function tests whether x is NaN (not a number).
-    // Zobrazí error, když je chyba senzoru
+  if (isnan(teplota)) { // pokud teplota není žádné číslo, zobrazí se error. definice isnan z internetu: The isnan() function tests whether x is NaN (not a number).
     lcd.clear();
     lcd.print("Error 621/gurt");//maly easter egg pro ty co to zapojí špatně xdd
     lcd.setCursor(0,1);
-    lcd.print("Chyba senzoru!"); // chyba kdyz neni senzor nalezen nebo kdyz je jeho hardware poškozen, stručně řečeno pokud arduino nedostane danou teplotu od senzoru, tak to napíše tuto chybu
+    lcd.print("Chyba senzoru!"); // chyba kdyz neni senzor nalezen nebo kdyz je jeho hardware poškozen, stručně řečeno pokud arduino nedostane danou teplotu od senzoru, tak to napíše tuhle chybu
     teplotaNactena = false; // nenacte se teplota
     delay(1000); // to je zde, aby se potom dokázalo načíst to co je na normální obrazovce
     return;

@@ -13,4 +13,5 @@ Tento projekt je jednoduchý teploměr postavený na Arduinu. Změří teplotu o
    - 9 Samec/Samec propojovacích vodičů 
    - 4 Samec/Samice propojovací vodiče
    - Nepájivé pole (breadboard)
+   
 2. **Postup zapojení:**

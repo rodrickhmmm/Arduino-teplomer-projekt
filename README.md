@@ -8,10 +8,12 @@ Tento projekt je jednoduchý teploměr postavený na Arduinu. Změří teplotu o
 
 1. **Na sestrojení budete potřebovat:**
    - Arduino Uno
+   - Nepájivé pole (breadboard)
    - Senzor DHT11 na měření teploty
    - LCD 1602 Displej (nebo 20x4, funguje na obojím)
    - 9 Samec/Samec propojovacích vodičů 
    - 4 Samec/Samice propojovací vodiče
-   - Nepájivé pole (breadboard)
+   - 2 Tlačítka
+   
    
 2. **Postup zapojení:**

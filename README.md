@@ -16,9 +16,15 @@ Tento projekt se zaměřuje na jednoduchý teploměr postavený na Arduinu. Změ
    - Nepájivé pole (breadboard)
 
 2. **Postup zapojení:**
-   - Vše připojte podle schéma:
-   ![Screenshot Tinkercad](schema/normalnischema.png)
+   - Vše připojte podle screenshotu z Tinkercadu:
+   ![Screenshot Tinkercad](schema/screenshot.png =588x340)
+
+   - Nebo podle schéma obvodu:
+   ![Schéma zapojení](schema/schema.png =511x396)
+
+
    - Vodič, který vede z portu SDA na displeji zapojte do A4 portu na arduinu
    - Vodič, který vede z portu SCL na displeji zapojte do A5 portu na arduinu
-   - Senzor DHT11 zapojíme zadní stranou (tou, kde není ten světle modrý senzor), aby nesnímal teplotu u kabelů, ale okolí, to je proč 
+   - Senzor DHT11 zapojíme zadní stranou (tou, kde není ten světle modrý senzor), aby nesnímal teplotu u kabelů, ale okolí. To je proč jsou vodiče zapojené na DHT11 na breadboardu v opačném směru.
+   - 
 

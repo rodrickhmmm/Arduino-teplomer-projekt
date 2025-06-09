@@ -34,7 +34,7 @@ Tento projekt se zaměřuje na jednoduchý teploměr postavený na Arduinu. Změ
 ---
 
 ## 3. Potřebné knihovny
-   Veškeré potřebné knihovny jsou již v zdrojovém kódu zahrnuty a stáhnuty, čili o to se nemusíte starat.
+   **Veškeré potřebné knihovny jsou již v zdrojovém kódu zahrnuty a stáhnuty, čili o to se nemusíte starat.**
 
 ---
 

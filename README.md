@@ -125,5 +125,5 @@ Tento projekt se zaměřuje na jednoduchý teploměr postavený na Arduinu. Změ
 
 ---
 
-## 6. Kontakt a podpora
-   Pokud si nevíte rady, napište do issues na tomto repozitáři. Budu se snažit co nejdříve odpovědět na vaše otázky.
+## 7. Kontakt a podpora
+   Pokud si nevíte rady s kódem, napište do issues na tomto repozitáři. Budu se snažit co nejdříve odpovědět na vaše otázky.

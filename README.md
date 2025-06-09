@@ -1,18 +1,19 @@
-# Arduino teploměr
+# **Arduino teploměr**
 
 Tento projekt se zaměřuje na jednoduchý teploměr postavený na Arduinu. Změří teplotu okolí a zobrazí ji na displeji. Dá se přepínat mezi stupni Celsia a Fahrenheitu.
+
 ---
 
 ## 1. Jak zařízení zapojit
 
 1. **Na sestrojení budete potřebovat:**
-   - Arduino Uno
-   - Nepájivé pole (breadboard)
-   - Senzor DHT11 na měření teploty
-   - LCD 1602 Displej (nebo 20x4, funguje na obojím)
-   - 9 Samec/Samec propojovacích vodičů 
-   - 4 Samec/Samice propojovací vodiče
+   - Arduino Uno R3
    - Nepájivé pole (anglicky breadboard - tento pojem budu v této dokumentaci používat)
+   - Senzor DHT11 na měření teploty [Link na součástku použitou v projektu](https://www.laskakit.cz/arduino-senzor-teploty-a-vlhkosti-vzduchu-dht11--modul/).
+   - LCD 1602 (16x2) Displej (nebo 20x4, funguje na obojím) [Link na součástku použitou v projektu](https://www.laskakit.cz/16x2-lcd-displej-1602-i2c-prevodnik/).
+   - 2 Tlačítka
+   - 9 Samec/Samec propojovacích vodičů
+   - 4 Samec/Samice propojovací vodiče
 
 2. **Jak zařízení zapojit:**
    - Vše připojte podle screenshotu z Tinkercadu:

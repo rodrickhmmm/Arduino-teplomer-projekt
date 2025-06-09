@@ -13,15 +13,12 @@ Tento projekt se zaměřuje na jednoduchý teploměr postavený na Arduinu. Změ
    - LCD 1602 Displej (nebo 20x4, funguje na obojím)
    - 9 Samec/Samec propojovacích vodičů 
    - 4 Samec/Samice propojovací vodiče
-<<<<<<< HEAD
    - Nepájivé pole (breadboard)
 
 2. **Postup zapojení:**
    - Vše připojte podle schéma:
    ![Screenshot Tinkercad](schema/normalnischema.png)
-=======
-   - 2 Tlačítka
-   
-   
-2. **Postup zapojení:**
->>>>>>> 38e559875314c5640e01475b27e53133550b6363
+   - Vodič, který vede z portu SDA na displeji zapojte do A4 portu na arduinu
+   - Vodič, který vede z portu SCL na displeji zapojte do A5 portu na arduinu
+   - Senzor DHT11 zapojíme zadní stranou (tou, kde není ten světle modrý senzor), aby nesnímal teplotu u kabelů, ale okolí, to je proč 
+

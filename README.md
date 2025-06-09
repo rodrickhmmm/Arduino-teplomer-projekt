@@ -12,7 +12,7 @@ Tento projekt se zaměřuje na jednoduchý teploměr postavený na Arduinu. Změ
    - LCD 1602 Displej (nebo 20x4, funguje na obojím)
    - 9 Samec/Samec propojovacích vodičů 
    - 4 Samec/Samice propojovací vodiče
-   - Nepájivé pole (breadboard)
+   - Nepájivé pole (anglicky breadboard - tento pojem budu v této dokumentaci používat)
 
 2. **Jak zařízení zapojit:**
    - Vše připojte podle screenshotu z Tinkercadu:

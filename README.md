@@ -1,6 +1,6 @@
 # Arduino teploměr
 
-Tento projekt je jednoduchý teploměr postavený na Arduinu. Změří teplotu okolí a zobrazí ji na displeji. Dá se přepínat mezi stupni Celsia a Fahrenheitu.
+Tento projekt se zaměřuje na jednoduchý teploměr postavený na Arduinu. Změří teplotu okolí a zobrazí ji na displeji. Dá se přepínat mezi stupni Celsia a Fahrenheitu.
 
 ---
 
@@ -13,5 +13,7 @@ Tento projekt je jednoduchý teploměr postavený na Arduinu. Změří teplotu o
    - 9 Samec/Samec propojovacích vodičů 
    - 4 Samec/Samice propojovací vodiče
    - Nepájivé pole (breadboard)
-   
+
 2. **Postup zapojení:**
+   - Vše připojte podle schéma:
+   ![Screenshot Tinkercad](schema/normalnischema.png)

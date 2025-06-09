@@ -19,7 +19,7 @@ const int TLACITKO2 = 7; //pin leveho tlacitka
 
 // Vyber JEDEN řádek podle svého displeje:
 //LiquidCrystal_I2C lcd(0x27, 20, 4); // pro 20x4 displej
-LiquidCrystal_I2C lcd(0x27, 16, 2); // pro 16x2 displej, pokud displej nefunguje tak můžete předělat adresu na 0x20 nebo 0x3F
+//LiquidCrystal_I2C lcd(0x27, 16, 2); // pro 16x2 displej, pokud displej nefunguje tak můžete předělat adresu na 0x20 nebo 0x3F
 //Konec nastaveni, dál se nehrabat---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // inicializace promenych

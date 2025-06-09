@@ -1,7 +1,6 @@
 # Arduino teploměr
 
 Tento projekt se zaměřuje na jednoduchý teploměr postavený na Arduinu. Změří teplotu okolí a zobrazí ji na displeji. Dá se přepínat mezi stupni Celsia a Fahrenheitu.
-
 ---
 
 ## 1. Jak zařízení zapojit
@@ -21,8 +20,7 @@ Tento projekt se zaměřuje na jednoduchý teploměr postavený na Arduinu. Změ
 
    - Nebo podle schéma obvodu:
    <img src="schema/schema.png" width="511" height="396">
-
-
+   
    - Vodič, který vede z portu SDA na displeji zapojte do A4 portu na arduinu
    - Vodič, který vede z portu SCL na displeji zapojte do A5 portu na arduinu
    - Senzor DHT11 zapojíme zadní stranou (tou, kde není ten světle modrý senzor), aby nesnímal teplotu u kabelů, ale okolí. To je proč jsou vodiče zapojené na DHT11 na breadboardu v opačném směru.
@@ -31,10 +29,16 @@ Tento projekt se zaměřuje na jednoduchý teploměr postavený na Arduinu. Změ
 
 ## 2. Jak kód stáhnout
    Kód stáhnete pomocí kliknutí na zelené tlačítko s textem "code", kde poté kliknete na "Download ZIP". Tímto stáhnete ZIP soubor, ve kterém je obsažen celý zdrojový kód.
+   Nepotřebujete stahovat žádné další knihovny – vše potřebné je již zahrnuto ve zdrojovém kódu, případně je dostupné přímo v Arduino IDE.
 
 ---
 
-## 3. Co lze v kódu upravit/změnit bez hrabání se ve stežějních částech kódu
+## 3. Potřebné knihovny
+   Veškeré potřebné knihovny jsou již v zdrojovém kódu zahrnuty a stáhnuty, čili o to se nemusíte starat.
+
+---
+
+## 4. Co lze v kódu upravit/změnit bez hrabání se ve stežějních částech kódu
    kód (nebo nastavení zařízení) mužete změnit mezi řádkem 14 až 23.
 
    - **Přenastavení pinu tlačítek** (řádek 15 a 16):
@@ -54,14 +58,14 @@ Tento projekt se zaměřuje na jednoduchý teploměr postavený na Arduinu. Změ
 
 ---
 
-## 4. Jak zařízení ovládat
+## 5. Jak zařízení ovládat
 - Arduino připojte k počítači a nahrajte do něj kód.
 - Po spuštění se zapne automaticky displej, kde po zmáčknutí pravého tlačítka (pokud je vše zapojeno správně) by se měla ukázat teplota.
 - Pomocí levého tlačítka se přepíná mezi stupnicí Celsia a Fahrenheitu. To, na jaké stupnici je zařízení nastaveno, se ukáže šipka buďto vedle C nebo F.
 
 ---
 
-## 5. Co dělat, když zařízení nefunguje
+## 6. Co dělat, když zařízení nefunguje
 1. **Zkontrolovat zapojení celého obvodu**
    - Ověřte, že všechno je zapojeno spravně. I kdyby to mělo znamenat odpojit a zapojit všechny vodiče, zkontrolovat celý obvod, přepojit tlačítka, senzor a displej, tak se to stejně vyplatí. Během tvoření tohoto projektu se mi to stalo tolikrát a opravdu přepojení celého obvodu to vyřešilo.
 
@@ -74,7 +78,7 @@ Tento projekt se zaměřuje na jednoduchý teploměr postavený na Arduinu. Změ
 
 ---
 
-## 6. Popis stěžejních částí kódu
+## 7. Popis stěžejních částí kódu
    V kódu je skoro každý řádek kódu popsán tak, aby mu šlo rozumět, čili by neměl být problém v porozumění kódu.
 
 1. **Knihovny pro komunikaci s displejem a senzorem DHT11**
@@ -125,5 +129,5 @@ Tento projekt se zaměřuje na jednoduchý teploměr postavený na Arduinu. Změ
 
 ---
 
-## 7. Kontakt a podpora
+## 8. Kontakt a podpora
    Pokud si nevíte rady s kódem, napište do issues na tomto repozitáři. Budu se snažit co nejdříve odpovědět na vaše otázky.

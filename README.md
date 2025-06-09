@@ -74,7 +74,7 @@ Tento projekt se zaměřuje na jednoduchý teploměr postavený na Arduinu. Změ
 
 ---
 
-## 5. Popis stěžejních částí kódu
+## 6. Popis stěžejních částí kódu
    V kódu je skoro každý řádek kódu popsán tak, aby mu šlo rozumět, čili by neměl být problém v porozumění kódu.
 
 1. **Knihovny pro komunikaci s displejem a senzorem DHT11**

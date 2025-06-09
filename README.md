@@ -17,10 +17,10 @@ Tento projekt se zaměřuje na jednoduchý teploměr postavený na Arduinu. Změ
 
 2. **Postup zapojení:**
    - Vše připojte podle screenshotu z Tinkercadu:
-   ![Screenshot Tinkercad](schema/screenshot.png =588x340)
+   <img src="schema/screenshot.png" width="588" height="340">
 
    - Nebo podle schéma obvodu:
-   ![Schéma zapojení](schema/schema.png =511x396)
+   <img src="schema/schema.png" width="511" height="396">
 
 
    - Vodič, který vede z portu SDA na displeji zapojte do A4 portu na arduinu

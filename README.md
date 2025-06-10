@@ -48,6 +48,18 @@ Tento projekt se zaměřuje na jednoduchý teploměr postavený na Arduinu. Změ
       const int TLACITKO2 = 7; //pin leveho tlacitka
    ```
    číslo 8 a 7 mužete změnit za jiné, na kterém máte tlačítka připojena do arduina.
+   
+   - **Přenastavení pinu senzoru** (řádek 17):
+   ```c++
+      #define DHTPIN 4 // pin senzoru
+   ```
+   číslo 4 můžete změnit za jiné, na kterém máte senzor připojen do arduina.
+
+   - **Přenastavení typu senzoru** (řádek 17):
+   ```c++
+      #define DHTTYPE DHT11 // typ senzoru
+   ```
+   `DHT11` můžete změnit na typ senzoru, který používáte (pokud používáte ten přesný jak je napsán v [Na sestrojení budete potřebovat](#1.-jak-zařízení-zapojit))
 
    - **Inicializace displeje** (řádek 20 až 22):
    ```c++

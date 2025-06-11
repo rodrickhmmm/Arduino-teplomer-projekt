@@ -55,7 +55,7 @@ Tento projekt se zaměřuje na jednoduchý teploměr postavený na Arduinu. Změ
    ```
    číslo 4 můžete změnit za jiné, na kterém máte senzor připojen do arduina.
 
-   - **Přenastavení typu senzoru** (řádek 17):
+   - **Přenastavení typu senzoru** (řádek 18):
    ```c++
       #define DHTTYPE DHT11 // typ senzoru
    ```

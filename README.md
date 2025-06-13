@@ -1,6 +1,6 @@
 # **Arduino teploměr**
 
-Tento projekt vznikl jako závěrečná práce během prvního ročníku na střední škole. Sloužil jako odevzdání na konci školního roku v rámci předmětu Programování.
+**Tento projekt vznikl jako závěrečná práce během prvního ročníku na střední škole. Sloužil jako odevzdání na konci školního roku v rámci předmětu Programování.**
 
 ---
 

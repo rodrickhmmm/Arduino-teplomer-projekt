@@ -1,6 +1,10 @@
 # **Arduino teploměr**
 
-Tento projekt se zaměřuje na jednoduchý teploměr postavený na Arduinu. Změří teplotu okolí a zobrazí ji na displeji. Dá se přepínat mezi stupni Celsia a Fahrenheitu.
+Tento projekt vznikl jako závěrečná práce během prvního ročníku na střední škole. Sloužil jako odevzdání na konci školního roku v rámci předmětu Programování.
+
+---
+
+Projekt se zaměřuje na jednoduchý teploměr postavený na Arduinu. Změří teplotu okolí a zobrazí ji na displeji. Dá se přepínat mezi stupni Celsia a Fahrenheitu.
 
 ---
 
